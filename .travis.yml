@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '0.10'
+services:
+  - mongodb
+  - redis-server
+before_install:
+- npm install -g grunt-cli
+- npm install -g bower
+install:
+- npm install
+- bower install
+notifications:
+  slack: codefellows:fkQPTxzD0bnugHw5aKQ8EZwF
+webgooks:
+  - urls:
+    - https://webhooks.gitter.im/e/12f31544873d7d3a0475

@@ -1,0 +1,9 @@
+.DS_Store/
+node_modules
+**/*.sw?
+app/bower_components/
+bower_components/
+build/
+db/
+test/testbundle.js
+test/bundle.js

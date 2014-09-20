@@ -1,0 +1,28 @@
+{
+  "name": "data-structure-visualization",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Data-Structure-Visualization/data-structure-visualization",
+  "authors": [
+    "theQueues"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.25",
+    "angular-route": "~1.2.25"
+  },
+  "devDependencies": {
+    "sinon": "~1.10.3",
+    "angular-mocks": "~1.2.25"
+  }
+}

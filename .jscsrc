@@ -1,0 +1,5 @@
+{
+  "validateQuoteMarks": "'",
+  "requireMultipleVarDecl": false,
+  "disallowMultipleVarDecl": true
+}
