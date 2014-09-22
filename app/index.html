@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Structure Visualization</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <div data-ng-app="myApp">
+        <div>
+          <nav>
+              <ul>
+              <li><a href="#/">Back to Main</a></li>
+                  <li><a href="#/admin">Admin</a></li>
+              </ul>
+          </nav>
+        </div>
+
+    <!--container for app -->
+      <div data-ng-view></div>
+
+    </div> <!-- this div is like a container for the entire data structure visualization app -->
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>
