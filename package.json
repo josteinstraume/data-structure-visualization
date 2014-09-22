@@ -4,7 +4,8 @@
   "description": "Tutorial site for new coders",
   "main": "server.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
