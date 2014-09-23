@@ -11,7 +11,7 @@ mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/tutorial-developm
 app.use(express.static(__dirname + (process.env.STATIC_DIR || '/build')));
 
 app.use(bodyparser.json());
-require('./routes/tutorial-routes')(app);
+require('./routes/note-routes')(app);
 
 var server = http.createServer(app);
 
