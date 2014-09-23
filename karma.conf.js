@@ -1,10 +1,13 @@
 // Karma configuration
 // Generated on Sat Sep 20 2014 10:18:58 GMT-0700 (PDT)
-'use strict'
+'use strict';
 
-var browsers = ['Chrome', 'PhantomJS'];
+var browsers = ['Chrome', 'PhantomJS','Firefox'];
 if ( /^win/.test(process.platform) ) {
-  browsers = ['IE'];
+  browsers.push('IE');
+}
+if ( /^darwin/.test(process.platform) ) {
+  browsers.push('Safari');
 }
 if (process.env.TRAVIS ) {
   browsers = ['PhantomJS'];
@@ -32,7 +35,6 @@ module.exports = function(config) {
     exclude: [
       '**/*.swp'
     ],
-
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
@@ -62,7 +64,6 @@ module.exports = function(config) {
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: false,
 
-
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: browsers,
@@ -70,6 +71,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: true
   });
 };

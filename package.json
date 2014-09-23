@@ -10,7 +10,15 @@
     "type": "git",
     "url": "https://github.com/codefellows/sea-b20-notes.git"
   },
-  "author": "",
+
+  "keywords": [
+    "tutorials",
+    "beginners",
+    "node",
+    "mongo",
+    "angular"
+  ],
+  "author": "Joaquin, Jostein, Larry",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/codefellows/sea-b20-notes/issues"

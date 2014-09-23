@@ -5,7 +5,7 @@ require('angular-route');
 
 var notesApp = angular.module('notesApp', ['ngRoute']);
 
-//controlers
+//controllers
 require('./notes/controllers/notes-controller')(notesApp);
 
 //filters
@@ -23,4 +23,5 @@ notesApp.config(['$routeProvider', function($routeProvider) {
     .otherwise({
       redirectTo: '/notes'
     });
-}])
+}]);
+
