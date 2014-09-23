@@ -3,7 +3,9 @@
 require('angular/angular');
 require('angular-route');
 
+/* jshint ignore:start */
 var notesApp = angular.module('notesApp', ['ngRoute']);
+/* jshint ignore:end */
 
 //controllers
 require('./notes/controllers/notes-controller')(notesApp);
