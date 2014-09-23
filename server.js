@@ -6,12 +6,12 @@ var mongoose = require('mongoose');
 var http = require('http');
 var app = express();
 
-mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/users-development');
+mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/tutorial-development');
 
 app.use(express.static(__dirname + (process.env.STATIC_DIR || '/build')));
 
 app.use(bodyparser.json());
-require('./routes/note-routes')(app);
+require('./routes/tutorial-routes')(app);
 
 var server = http.createServer(app);
 

@@ -18,7 +18,7 @@
     "mongo",
     "angular"
   ],
-  "author": "TheQueues",
+  "author": "Joaquin, Jostein, Larry",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Data-Structure-Visualization/data-structure-visualization/issues"
@@ -33,6 +33,7 @@
   "devDependencies": {
     "angular": "^1.2.23",
     "angular-mocks": "^1.2.22",
+    "backbone": "^1.1.2",
     "chai": "^1.9.1",
     "chai-http": "^0.4.0",
     "debowerify": "^0.8.1",
@@ -40,8 +41,10 @@
     "grunt-browserify": "^2.1.4",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express-server": "^0.4.19",
+    "grunt-jscs": "^0.7.1",
     "grunt-karma": "^0.9.0",
     "grunt-mocha": "^0.4.11",
     "grunt-simple-mocha": "^0.4.0",
@@ -50,10 +53,12 @@
     "jsdom": "^1.0.0-pre.1",
     "karma": "^0.12.23",
     "karma-chrome-launcher": "^0.1.4",
+    "karma-firefox-launcher": "^0.1.3",
     "karma-ie-launcher": "^0.1.5",
     "karma-jasmine": "^0.1.5",
     "karma-mocha": "^0.1.8",
     "karma-phantomjs-launcher": "^0.1.4",
+    "karma-safari-launcher": "^0.1.1",
     "mocha": "^1.21.4",
     "sinon": "^1.10.3"
   }
