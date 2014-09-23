@@ -1,0 +1,24 @@
+<div data-ng-controller="userInfoController">
+  <div data-new-user-form>
+    <p>Create a new user</p>
+    <form data-ng-model = "userInfo">
+      <p>Enter your name: </p>
+      <label data-ng-show="newuserform.name.$dirty && newuserform.$invalid">Name cannot be blank</label>
+      <input type="text" placeholder="Your name" />
+      <br/>
+      <p>Enter your email address: </p>
+      <label data-ng-show="newuserform.email.$dirty && newuserform.$invalid">Email cannot be blank</label>
+      <input type="text" placeholder="Your email" />
+      <br/>
+      <p>Enter your user name: </p>
+      <label data-ng-show="newuserform.username.$dirty && newuserform.$invalid">User name cannot be blank</label>
+      <input type="text" placeholder="Your user name" />
+      <br/>
+      <p>Select your password: </p>
+      <label data-ng-show="newuserform.password.$dirty && newuserform.$invalid">Email cannot be blank</label>
+      <input type="text" placeholder="Your password" />
+      <input type="text" placeholder="Please re-enter your password">
+      <button data-ng-disabled="newuserform.$invalid" data-ng-click="createUser()">Create Account</button>
+    </form>
+  </div>
+</div>
