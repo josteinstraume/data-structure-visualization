@@ -1,28 +1,26 @@
 'use strict';
-//comment for changes
+
 require('angular/angular');
 require('angular-route');
+require('angular-base64');
+require('angular-cookies');
 
-/* jshint ignore:start */
-var notesApp = angular.module('notesApp', ['ngRoute']);
-/* jshint ignore:end */
+var tutorialApp = angular.module('tutorialApp', ['ngRoute', 'ngCookies', 'base64']);
 
-//controllers
-require('./notes/controllers/notes-controller')(notesApp);
+require('./controllers/users-controller')(tutorialApp);
+require('./controllers/home-controller')(tutorialApp);
 
-//filters
-require('./filters/sentence-filter')(notesApp);
-
-//services
-require('./notes/services/notes-server')(notesApp);
-
-notesApp.config(['$routeProvider', function($routeProvider) {
+tutorialApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
-    .when('/notes', {
-      templateUrl: 'views/notes/notes.html',
-      controller: 'notesController'
-    })
-    .otherwise({
-      redirectTo: '/notes'
-    });
+  .when('/home', {
+    templateUrl: 'home.html',
+    controller: 'homeController'
+  })
+  .when('/signin', {
+    templateUrl: 'users.html',
+    controller: 'usersController'
+  })
+  .otherwise({
+    redirectTo:'/signin'
+  });
 }]);

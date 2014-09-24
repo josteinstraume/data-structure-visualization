@@ -1,0 +1,16 @@
+<div data-ng-controller="usersController">
+  <form name="userForm" data-ng-hide="newuser">
+    <input type="text" required data-ng-model="user.email" placeholder="username"/>
+    <input type="password" required data-ng-model="user.password" placeholder="password"/>
+    <button data-ng-disabled="userform.$invalid" data-ng-click="signin()">Sign In</button>
+  </form>
+
+  <button data-ng-click="newuser = !newuser">{{!newuser ? 'Create new User' : 'Sign in to existing account'}}</button>
+
+  <form name="newuserform" data-ng-show="newuser">
+    <input type="text" required data-ng-model="user.email" placeholder="username"/>
+    <input type="password" required data-ng-model="user.password" placeholder="password"/>
+    <input type="password" required data-ng-model="user.passwordConfirmation" placeholder="confirm your passowrd"/>
+    <button data-ng-disabled="newuserform.$invalid" data-ng-click="createNewUser()">Create New User</button>
+  </form>
+</div>

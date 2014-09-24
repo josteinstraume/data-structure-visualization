@@ -25,9 +25,17 @@
   },
   "homepage": "https://github.com/Data-Structure-Visualization/data-structure-visualization",
   "dependencies": {
+    "bcrypt-nodejs": "latest",
     "body-parser": "^1.8.2",
     "express": "^4.9.3",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "jwt-simple": "latest",
+    "moment": "^2.8.3",
     "mongoose": "^3.8.16",
+    "passport": "^0.2.1",
+    "passport-http": "^0.2.2",
     "sinon": "^1.10.3"
   },
   "devDependencies": {
