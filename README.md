@@ -7,5 +7,5 @@
 - npm install
 - bower install
 - mongod --dbpath ./db
-- grunt
+- grunt build:dev
 - node server.js
