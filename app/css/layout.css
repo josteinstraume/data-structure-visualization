@@ -8,22 +8,147 @@
 ================================================== */
 
 	/* Larger HD Displays 1280 (devices and browsers) */
-	@media only screen and (min-width: 1280px) {}
+	@media only screen and (min-width: 1280px) {
+		.body-bkg {
+		  background-size: center;
+		  height: 75rem;
+		}
+
+	}
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (min-width: 960px) {
+		.content__style {
+		  width: 60%;
+		}
+
+		.body-bkg {
+		  background-size: center;
+		  height: 65rem;
+		}
+	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.content__style {
+		  width: 70%;
+		}
 
+		.main-content__style {
+		  width: 40%;
+		}
+	}
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.tutorial__header, .login__header {
+		  padding: 3rem 0;
+		  font-size: 1.5rem;
+		}
+
+		.tutorial__header-title, .login__header-title {
+		  font-size: 2.5rem;
+		  padding-top: 2rem;
+		  padding-bottom: 1rem;
+		}
+
+		.login__header-title {
+		  padding-top: 7rem;
+		}
+
+		.tutorial__header-subtitle, .login__header-subtitle {
+		  font-size: 1.3rem;
+		  padding-bottom: 0.5rem;
+		}
+
+		p {
+		  padding-bottom: 1.5rem;
+		  font-size: 1rem;
+		  color: #FFF;
+		  line-height: 1.3rem;
+		}
+
+		.tutorial__para-width {
+		  width: 75%;
+		}
+
+		.content__demo {
+		  height: 30rem;
+		}
+
+		.body-bkg {
+		  background-size: center;
+		  height: 60rem;
+		}
+
+		.main-content__style {
+		  width: 50%;
+		}
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+		.tutorial__header, .login__header {
+		  padding: 3rem 0;
+		  font-size: 1.5rem;
+		}
+
+		.tutorial__header-title, .login__header-title {
+		  font-size: 2.5rem;
+		  padding-top: 2rem;
+		  padding-bottom: 1rem;
+		}
+
+		.login__header-title {
+		  line-height: 2.5rem;
+		}
+
+		.tutorial__header-subtitle, .login__header-subtitle {
+		  font-size: 1.5rem;
+		  padding-bottom: 0.5rem;
+		}
+
+		.login__header-subtitle {
+		  font-size: 1.2rem;
+		  font-weight: normal;
+		}
+
+		p {
+		  font-size: .9rem;
+		  line-height: 1.1rem;
+		}
+
+		.tutorial__para-width {
+		  width: 85%;
+		}
+
+		.body-bkg {
+		  height: 17rem;
+		}
+
+		.info-bar p {
+			width: 85%;
+			margin: 0 auto;
+		}
+
+		.content__demo {
+		  height: 20rem;
+		}
+
+		.body-bkg {
+		  background-size: center;
+		  height: 40rem;
+		  width: 100%;
+		}
+
+		.main-content__style {
+		  width: 80%;
+		}
+	}
 
 
 /* #Font-Face
