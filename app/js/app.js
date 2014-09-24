@@ -14,9 +14,6 @@ require('./controllers/tutorial-select-controller')(tutorialApp);
 require('./controllers/users-controller')(tutorialApp);
 require('./controllers/home-controller')(tutorialApp);
 
-//filters
-require('./filters/sentence-filter')(tutorialApp);
-
 //services
 require('./services/tutorial-server')(tutorialApp);
 require('./services/user-input-service')(tutorialApp);
