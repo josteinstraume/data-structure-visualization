@@ -9,7 +9,7 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/spontaneous-dev');
+mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/tutorial-dev');
 
 app.use(express.static(__dirname + (process.env.STATIC_DIR || '/build')));
 
