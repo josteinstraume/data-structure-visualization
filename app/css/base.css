@@ -47,6 +47,11 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 Our Base-Colors, UI and HTML Base Styling
 
 .light-blue {
