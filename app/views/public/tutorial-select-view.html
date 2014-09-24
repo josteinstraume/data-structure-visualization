@@ -1,14 +1,19 @@
-<h2>Welcome {{username}}</h2>
-</br>
-<h3>Here is a binary tree tutorial:</h3>
-<div>
-<h2>Instructions</h2>
- <p>Click in the open space to add a node, drag from one node to another to add an edge.</p>
-    <p>Ctrl-drag a node to move the graph layout.</p>
-    <p>Click a node or an edge to select it.</p>
-    <p>When a node is selected: R toggles reflexivity, Delete removes the node.</p>
-    <p>When an edge is selected: L(eft), R(ight), B(oth) change direction, Delete removes the edge.</p>
-</div>
-<div id="binary">
+  <section class="tutorial-pattern">
+    <header class="tutorial__header tutorial-bkg">
+      <a class="user-card__link" href="#"><span class="icon-user"> {{username}}</span></a>
+      <h1 class="tutorial__header-title">Binary Tree Tutorial</h1>
+      <h2 class="tutorial__header-subtitle">A Simple Overview.</h2>
+      <p class="tutorial__para-width"><span class="icon-qoute"></span>A binary tree is made of nodes, where each node contains a "left" pointer, a "right" pointer, and a data element. The "root" pointer points to the topmost node in the tree. The left and right pointers recursively point to smaller "subtrees" on either side. A null pointer represents a binary tree with no elements -- the empty tree. The formal recursive definition is: a binary tree is either empty (represented by a null pointer), or is made of a single node, where the left and right pointers (recursive definition ahead) each point to a binary tree.<cite>-Standford Edu</cite></p>
+    </header>
+    <main>
+      <section class="info-bar">
+        <h1 class="info-bar__title">Instructions</h1>
+        <p>Click in the open space to add a node, drag from one node to another to add an edge. Ctrl-drag a node to move the graph layout. Click a node or an edge to select it. When a node is selected: R toggles reflexivity, Delete removes the node. When an edge is selected: L(eft), R(ight), B(oth) change direction, Delete removes the edge.</p>
+      </section>
+      <article class="content__demo-style">
+        <section id="binary" class="content__demo-area">
+        </section>
+      </article>
+    </main>
+  </section>
   <script src="dthree.js"></script>
-</div>

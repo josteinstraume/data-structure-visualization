@@ -5,6 +5,14 @@
   width: 100%;
 }
 
+.user-card__link {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+  text-align: right;
+  margin: 1rem 2rem 0 0;
+}
+
 .tutorial__header {
   text-align: center;
   padding: 5rem 0;
