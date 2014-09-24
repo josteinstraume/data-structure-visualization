@@ -19,7 +19,8 @@
   ],
   "dependencies": {
     "angular": "~1.2.25",
-    "angular-route": "~1.2.25"
+    "angular-route": "~1.2.25",
+    "d3": "~3.4.11"
   },
   "devDependencies": {
     "sinon": "~1.10.3",

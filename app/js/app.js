@@ -3,24 +3,20 @@
 require('angular/angular');
 require('angular-route');
 
-var notesApp = angular.module('notesApp', ['ngRoute']);
+var tutorialApp = angular.module('tutorialApp', ['ngRoute']);
 
 //controlers
-require('./notes/controllers/notes-controller')(notesApp);
+require('./controllers/admin-controller')(tutorialApp);
+require('./controllers/tutorial-controller')(tutorialApp);
+require('./controllers/tutorial-select-controller')(tutorialApp);
 
 //filters
-require('./filters/sentence-filter')(notesApp);
+require('./filters/sentence-filter')(tutorialApp);
 
 //services
-require('./notes/services/notes-server')(notesApp);
+require('./services/tutorial-server')(tutorialApp);
+require('./services/user-input-service')(tutorialApp);
 
-notesApp.config(['$routeProvider', function($routeProvider) {
-  $routeProvider
-    .when('/notes', {
-      templateUrl: 'views/notes/notes.html',
-      controller: 'notesController'
-    })
-    .otherwise({
-      redirectTo: '/notes'
-    });
-}])
+//directives
+//routes
+require('./routes/tutorial-routes')(tutorialApp);
