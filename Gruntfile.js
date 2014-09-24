@@ -1,4 +1,3 @@
-'use strict';
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -16,31 +15,16 @@ module.exports = function(grunt) {
   grunt.initConfig({
     clean: {
       dev: {
-        src: ['build/']
+        src: 'build/'
       }
     },
-
     copy: {
       dev: {
         expand: true,
-        cwd: 'app/',
-        src: ['*.html', '*.css', 'views/**/*.html'],
+        cwd: 'app/',  //current working directory
+        src: ['*.html', 'css/*.css', 'views/**/*.html'],
         dest: 'build/',
         filter: 'isFile'
-      }
-    },
-
-    jscs: {
-      src: allJavaScriptFilePaths,
-      options: {
-        config: '.jscsrc',
-      }
-    },
-
-    jshint: {
-      all: allJavaScriptFilePaths,
-      options: {
-        jshintrc: true
       }
     },
 
@@ -58,33 +42,24 @@ module.exports = function(grunt) {
           transform: ['debowerify'],
           debug: true
         },
-        src: ['test/angular/**/*test.js'],
+        src: ['test/*test.js'],
         dest: 'test/angular-testbundle.js'
-      }
-    },
-
-    simplemocha: {
-      all: {
-        src: ['test/mocha/api/**/*.js']
       }
     },
 
     karma: {
       unit: {
         configFile: 'karma.conf.js'
-      },
-      continuous: {
-        configFile: 'karma.conf.js',
-        singleRun: true,
-        browsers: [ 'PhantomJS' ]
-      },
+      }
     },
 
     express: {
+      options: {
+        port: 3000
+      },
       dev: {
         options: {
-          options: 'server.js',
-          background: true
+          script: 'server.js'
         }
       }
     },
@@ -92,25 +67,23 @@ module.exports = function(grunt) {
     watch: {
       angulartest: {
         files: ['app/js/**/*.js', 'app/index.html', 'app/views/**/*.html'],
-        tasks: ['browserify:angulartest', 'karma:unit'],
+        tasks: ['browserify:angulartest'],
         options: {
-          spawn: false
+          spawn:false
         }
       },
       express: {
-        files: ['app/js/**/*.js', 'app/index.html', 'app/views/**/*.html', 'server.js', 'models/*.js', 'routes/*.js'],
-        tasks: ['buildtest', 'express:dev'],
+        files: ['app/js/**/*.js', 'models/*.*', 'routes/*.*', 'app/index.html', 'app/views/**/*.html', 'app/css/*.css', 'app/views/**/*.html', 'server.js', 'models/*.js'],
+        tasks: ['test','build'],
         options: {
           spawn: false
         }
       }
     }
   });
-  grunt.registerTask('style', ['jshint','jscs']);
-  grunt.registerTask('build:dev', ['clean:dev', 'browserify:dev', 'copy:dev']);
-  grunt.registerTask('angulartest', ['browserify:angulartest', 'karma:unit']);
-  grunt.registerTask('angulartestwatch', ['angulartest', 'watch:angulartest']);
-  grunt.registerTask('test', ['style', 'angulartest', 'simplemocha']);
-  grunt.registerTask('buildtest', ['test', 'build:dev']);
-  grunt.registerTask('default', ['buildtest', 'watch:express']);
+
+  grunt.registerTask('build',['clean:dev','browserify:dev', 'copy:dev']);
+  grunt.registerTask('test', ['browserify:angulartest','karma:unit']);
+  grunt.registerTask('serve', ['express:dev','watch:express']);
+  grunt.registerTask('default',['test','build','serve']);
 };
