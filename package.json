@@ -24,10 +24,18 @@
   },
   "homepage": "https://github.com/codefellows/sea-b20-notes",
   "dependencies": {
-    "body-parser": "^1.6.3",
-    "express": "^4.7.4",
     "grunt": "^0.4.5",
-    "mongoose": "^3.8.14",
+    "bcrypt-nodejs": "latest",
+    "body-parser": "^1.8.2",
+    "express": "^4.9.3",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "jwt-simple": "latest",
+    "moment": "^2.8.3",
+    "mongoose": "^3.8.16",
+    "passport": "^0.2.1",
+    "passport-http": "^0.2.2",
     "sinon": "^1.10.3"
   },
   "devDependencies": {

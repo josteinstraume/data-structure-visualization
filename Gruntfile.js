@@ -1,14 +1,18 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-mocha');
   grunt.loadNpmTasks('grunt-simple-mocha');
   grunt.loadNpmTasks('grunt-karma');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-jscs');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
+
 
   var allJavaScriptFilePaths = ['app/js/**/*.js','models/**/*.js','routes/**/*.js','server.js'];
 
@@ -44,7 +48,16 @@ module.exports = function(grunt) {
         },
         src: ['test/*test.js'],
         dest: 'test/angular-testbundle.js'
+      },
+      test: {
+        options: {
+          transform: ['debowerify'],
+          debug: true
+        },
+        src: ['test/mocha/**/*.js'],
+        dest: 'test/testbundle.js'
       }
+
     },
 
     karma: {
@@ -65,6 +78,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      files: ['server.js', 'routes/**/*.js', 'app/**/*'],
+      tasks: ['build'],
+
       angulartest: {
         files: ['app/js/**/*.js', 'app/index.html', 'app/views/**/*.html'],
         tasks: ['browserify:angulartest'],
@@ -78,6 +94,28 @@ module.exports = function(grunt) {
         options: {
           spawn: false
         }
+      }
+    },
+
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          'dist/index.html': 'app/index.html'
+        }
+      }
+    },
+    cssmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'app/css/',
+          src: ['*.css'],
+          dest: 'dist/css/'
+        }]
       }
     }
   });
