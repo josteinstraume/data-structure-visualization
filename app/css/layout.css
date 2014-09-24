@@ -9,29 +9,57 @@
 
 	/* Larger HD Displays 1280 (devices and browsers) */
 	@media only screen and (min-width: 1280px) {
-		.body-bkg {
+		.login-bkg {
 		  background-size: center;
 		  height: 75rem;
+		}
+
+		p {
+		  font-size: 1.1rem;
+		  line-height: 1.4rem;
 		}
 
 	}
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (min-width: 960px) {
-		.content__style {
+		.content__demo-style {
 		  width: 60%;
+		  height: 40rem;
 		}
 
-		.body-bkg {
+		.content__demo-area {
+		  width: 90%;
+		  height: 87%;
+		  margin: 5% auto;
+		  border-radius: .4rem;
+		  border: 2px solid rgba(250, 250, 250, 0.1);
+		}
+
+		.login-bkg {
 		  background-size: center;
 		  height: 65rem;
+		}
+
+		p {
+		  font-size: 1.1rem;
+		  line-height: 1.4rem;
 		}
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		.content__style {
+		.content__demo-style {
 		  width: 70%;
+		  height: 36rem;
+		}
+
+		.content__demo-area {
+		  width: 90%;
+		  height: 90%;
+		  margin: 5% auto;
+		  border-radius: .4rem;
+		  border: 2px solid rgba(250, 250, 250, 0.1);
 		}
 
 		.main-content__style {
@@ -61,7 +89,7 @@
 		}
 
 		.tutorial__header-subtitle, .login__header-subtitle {
-		  font-size: 1.3rem;
+		  font-size: 1.4rem;
 		  padding-bottom: 0.5rem;
 		}
 
@@ -76,17 +104,21 @@
 		  width: 75%;
 		}
 
-		.content__demo {
+		.content__demo-area {
 		  height: 30rem;
 		}
 
-		.body-bkg {
+		.login-bkg {
 		  background-size: center;
 		  height: 60rem;
 		}
 
 		.main-content__style {
 		  width: 50%;
+		}
+
+		.tutorial-bkg {
+		  height: 16rem;
 		}
 	}
 
@@ -126,7 +158,7 @@
 		  width: 85%;
 		}
 
-		.body-bkg {
+		.login-bkg {
 		  height: 17rem;
 		}
 
@@ -135,11 +167,11 @@
 			margin: 0 auto;
 		}
 
-		.content__demo {
+		.content__demo-area {
 		  height: 20rem;
 		}
 
-		.body-bkg {
+		.login-bkg {
 		  background-size: center;
 		  height: 40rem;
 		  width: 100%;
@@ -147,6 +179,10 @@
 
 		.main-content__style {
 		  width: 80%;
+		}
+
+		.tutorial-bkg {
+		  height: 18rem;
 		}
 	}
 
