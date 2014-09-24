@@ -7,7 +7,7 @@ module.exports = function(app) {
                 name: newuser.name,
                 email: newuser.email,
                 username: newuser.username,
-                password: newuser.password
+                password: newuser.password,
                 password2: newuser.password2
               }
     };
@@ -23,7 +23,6 @@ module.exports = function(app) {
             console.log(data);
             console.log(status);
           });
-        }
         return promise;
       },
 
