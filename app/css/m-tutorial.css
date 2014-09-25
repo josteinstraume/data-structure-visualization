@@ -1,3 +1,7 @@
+.tutorial-pattern {
+  background: url(../img/dark_matter.png) top left repeat;
+}
+
 .tutorial-bkg {
   background: url(../img/DeathtoStock_Wired4.jpg) center no-repeat;
   background-size: cover;
@@ -37,11 +41,6 @@
   opacity: 0.7;
 }
 
-.content__demo-style {
-  width: 100%;
-  margin: 2rem auto;
-}
-
 .tutorial__para-width {
   width: 50%;
   height: 4rem;
@@ -55,6 +54,11 @@
 .content__divider {
   background: #EE4925;
   height: 0.3rem;
+}
+
+.content__demo-style {
+  width: 100%;
+  margin: 2rem auto;
 }
 
 .instructions__container {
@@ -88,10 +92,6 @@
   width: 50%;
   padding-bottom: 0.5rem;
   float: left;
-}
-
-.tutorial-pattern {
-  background: url(../img/dark_matter.png) top left repeat;
 }
 
 .footer__style {
