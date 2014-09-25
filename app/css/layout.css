@@ -22,19 +22,6 @@
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (min-width: 960px) {
-/*		.content__demo-style {
-		  width: 60%;
-		  height: 40rem;
-		}
-
-		.content__demo-area {
-		  width: 90%;
-		  height: 87%;
-		  margin: 5% auto;
-		  border-radius: .4rem;
-		  border: 2px solid rgba(250, 250, 250, 0.1);
-		}*/
-
 		.login-bkg {
 		  background-size: center;
 		  height: 65rem;
@@ -48,26 +35,22 @@
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-/*		.content__demo-style {
-		  width: 70%;
-		  height: 36rem;
-		}
-
-		.content__demo-area {
-		  width: 90%;
-		  height: 90%;
-		  margin: 5% auto;
-		  border-radius: .4rem;
-		  border: 2px solid rgba(250, 250, 250, 0.1);
-		}*/
-
 		.main-content__style {
 		  width: 40%;
+		}
+		#binary {
+  		padding-left: 0;
+  		margin-left: -5rem;
+  		width: 50%;
 		}
 	}
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 
+		#binary {
+  		padding-left: 0;
+  		margin-left: -5rem;
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -101,10 +84,6 @@
 		.tutorial__para-width {
 		  width: 75%;
 		}
-/*
-		.content__demo-area {
-		  height: 30rem;
-		}*/
 
 		.login-bkg {
 		  background-size: center;
@@ -166,10 +145,6 @@
 			width: 95%;
 			margin: 0 auto;
 		}
-
-/*		.content__demo-area {
-		  height: 20rem;
-		}*/
 
 		.login-bkg {
 		  background-size: center;
