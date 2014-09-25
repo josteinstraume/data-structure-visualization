@@ -7,7 +7,7 @@ module.exports = function(app) {
 
     $scope.username = userInputService.get();
 
-    $scope.advanceToSkills = function() {
+    $scope.advanceToTutorials = function() {
       $location.path('/tutorial-select');
       userInputService.set("username",$scope.username);
     };
