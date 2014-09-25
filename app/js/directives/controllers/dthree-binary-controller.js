@@ -5,14 +5,23 @@ module.exports = function(app) {
   app.controller('dthreeBinaryController', function($scope){
 
   // set up SVG for D3
-  var width  = 960,
-      height = 500,
-      colors = d3.scale.category10();
+  // var width  = 960,
+  //     height = 500,
+     var colors = d3.scale.category10();
 
   var svg = d3.select('#binary')
-    .append('svg')
-    .attr('width', width)
-    .attr('height', height);
+    // .append('svg')
+    // .attr('width', width)
+    // .attr('height', height);
+    // .append("div")
+   .classed("svg-container", true) //container class to make it responsive
+   .append("svg")
+   //responsive SVG needs these 2 attributes and no width and height attr
+   .attr("preserveAspectRatio", "xMinYMin meet")
+   .attr("viewBox", "0 0 600 400")
+   //class to make it responsive
+   .classed("svg-content-responsive", true);
+
 
   // set up initial nodes and links
   //  - nodes are known by 'id', not by index in array.
@@ -172,7 +181,7 @@ module.exports = function(app) {
 
     g.append('svg:circle')
       .attr('class', 'node')
-      .attr('r', 12)
+      .attr('r', 20)
       .style('fill', function(d) { return (d === selected_node) ? d3.rgb(colors(d.id)).brighter().toString() : colors(d.id); })
       .style('stroke', function(d) { return d3.rgb(colors(d.id)).darker().toString(); })
       .classed('reflexive', function(d) { return d.reflexive; })
