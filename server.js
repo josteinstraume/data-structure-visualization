@@ -24,7 +24,6 @@ var jwtauth = require('./lib/jwtauth')(app);
 app.use(bodyparser.json());
 require('./routes/tutorial-routes')(app);
 require('./routes/user-routes')(app, passport);
-require('./routes/note-routes')(app, jwtauth.auth);
 
 var server = http.createServer(app);
 

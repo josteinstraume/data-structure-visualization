@@ -13,12 +13,16 @@ require('./controllers/tutorial-controller')(tutorialApp);
 require('./controllers/tutorial-select-controller')(tutorialApp);
 require('./controllers/users-controller')(tutorialApp);
 require('./controllers/home-controller')(tutorialApp);
+require('./directives/controllers/dthree-binary-controller')(tutorialApp);
+require('./controllers/data-controller')(tutorialApp);
 
 //services
 require('./services/tutorial-server')(tutorialApp);
 require('./services/user-input-service')(tutorialApp);
 
 //directives
+require('./directives/d3-binary-directive')(tutorialApp);
+
 //routes
 require('./routes/tutorial-routes')(tutorialApp);
 

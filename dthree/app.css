@@ -1,4 +1,5 @@
 svg {
+  background-color: #FFF;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -52,7 +53,4 @@ text {
 text.id {
   text-anchor: middle;
   font-weight: bold;
-}
-
-#binary {
 }

@@ -9,6 +9,7 @@
         <fieldset>
           <legend class="form__heading">LOGIN</legend>
 
+
 <div data-ng-controller="usersController">
   <form name="userForm" data-ng-hide="newuser">
     <input class="form__input" type="text" required data-ng-model="user.email" placeholder="Username">
@@ -31,6 +32,11 @@
 <!--             <input class="form__input" required data-ng-model="username" type="name" placeholder="Username" name="userame" autofocus>
             <input class="form__input" required data-ng-model="password" type="password" placeholder="Password" name="pwd"> -->
             <a class="form__input--button" data-ng-click="advanceToSkills()" type="submit" name="login" value="Log In">.</a>
+
+<!--             <input class="form__input" required data-ng-model="username" placeholder="Username" name="userame" autofocus>
+            <input class="form__input" required data-ng-model="password" placeholder="Password" name="password">
+            <input class="form__input--button" data-ng-click="advanceToTutorials()" name="login" value="Log In"> -->
+
         </fieldset>
       </form>
     </main>
