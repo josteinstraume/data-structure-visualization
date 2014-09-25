@@ -14,8 +14,8 @@ module.exports = function(app) {
 
       //admin
       .when('/admin', {
-        templateUrl: '/views/admin/admin-view.html',
-        controller: 'adminController'
+        templateUrl: '/views/public/admin-view.html',
+        controller: 'dataController'
       })
 
             //second page

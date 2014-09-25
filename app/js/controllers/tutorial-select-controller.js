@@ -4,10 +4,10 @@
 
 module.exports = function(app) {
   app.controller('tutorialSelectController', function($scope, $location, userInputService) {
-
+    $scope.d3 = require('d3');
     $scope.username = userInputService.get();
 
-    $scope.advanceToSkills = function() {
+    $scope.advanceToTutorials = function() {
       $location.path('/tutorial-select');
       userInputService.set("username",$scope.username);
     };
