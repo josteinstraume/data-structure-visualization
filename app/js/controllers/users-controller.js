@@ -15,7 +15,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $location.path('/home');
+        $location.path('/tutorial-select');
         console.log('success');
       })
       .error(function(data){

@@ -8,7 +8,7 @@ require('angular-cookies');
 var tutorialApp = angular.module('tutorialApp', ['ngRoute', 'ngCookies', 'base64']);
 
 //controlers
-require('./controllers/admin-controller')(tutorialApp);
+// require('./controllers/admin-controller')(tutorialApp);
 require('./controllers/tutorial-controller')(tutorialApp);
 require('./controllers/tutorial-select-controller')(tutorialApp);
 require('./controllers/users-controller')(tutorialApp);
