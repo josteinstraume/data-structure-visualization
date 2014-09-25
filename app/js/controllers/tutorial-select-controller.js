@@ -4,7 +4,7 @@
 
 module.exports = function(app) {
   app.controller('tutorialSelectController', function($scope, $location, userInputService) {
-
+    $scope.d3 = require('d3');
     $scope.username = userInputService.get();
 
     $scope.advanceToTutorials = function() {
