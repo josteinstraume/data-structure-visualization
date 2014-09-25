@@ -1,7 +1,6 @@
 .tutorial-bkg {
   background: url(../img/DeathtoStock_Wired4.jpg) center no-repeat;
   background-size: cover;
-  height: 15rem;
   width: 100%;
 }
 
@@ -9,8 +8,9 @@
   font-family: 'Muli', sans-serif;
   font-size: 1.5rem;
   color: #FFF;
-  text-align: right;
-  margin: 1rem 2rem 0 0;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 
 .tutorial__header {
@@ -24,7 +24,7 @@
   font-size: 4rem;
   font-weight: bolder;
   color: #FFF;
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 1.7rem;
 }
 
@@ -59,12 +59,13 @@
 
 .info-bar {
   background: #2197B7;
-  text-align: center;
   border-top: 1px solid #3A484C;
   border-bottom: 1px solid #03A4D3;
 }
 
 .info-bar__title {
+  width: 80%;
+  margin: 0 auto;
   font-family: 'Muli', sans-serif;
   font-size: 1.5rem;
   color: #FFF;
@@ -73,6 +74,22 @@
   font-weight: normal;
 }
 
+/*copied from base p*/
+.info-bar__list {
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #FFF;
+  line-height: 1.2rem;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .tutorial-pattern {
   background: url(../img/binding_dark.png) top left repeat;
+}
+
+.footer__para {
+  text-align: center;
+  color: gray;
 }

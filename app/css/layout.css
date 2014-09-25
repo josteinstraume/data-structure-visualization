@@ -19,6 +19,9 @@
 		  line-height: 1.4rem;
 		}
 
+		.info-bar {
+		}
+
 	}
 
 	/* Smaller than standard 960 (devices and browsers) */
@@ -44,6 +47,9 @@
 		p {
 		  font-size: 1.1rem;
 		  line-height: 1.4rem;
+		}
+
+		.info-bar {
 		}
 	}
 
@@ -80,7 +86,6 @@
 
 		.tutorial__header-title, .login__header-title {
 		  font-size: 2.5rem;
-		  padding-top: 2rem;
 		  padding-bottom: 1rem;
 		}
 
@@ -117,9 +122,6 @@
 		  width: 50%;
 		}
 
-		.tutorial-bkg {
-		  height: 16rem;
-		}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -133,6 +135,11 @@
 		  font-size: 2.5rem;
 		  padding-top: 2rem;
 		  padding-bottom: 1rem;
+		}
+
+		.tutorial__header-title {
+			line-height: 2.5rem;
+			padding-top: 3rem;
 		}
 
 		.login__header-title {
@@ -163,7 +170,7 @@
 		}
 
 		.info-bar p {
-			width: 85%;
+			width: 95%;
 			margin: 0 auto;
 		}
 
@@ -181,9 +188,6 @@
 		  width: 80%;
 		}
 
-		.tutorial-bkg {
-		  height: 18rem;
-		}
 	}
 
 
