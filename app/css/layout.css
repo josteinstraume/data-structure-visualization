@@ -18,15 +18,11 @@
 		  font-size: 1.1rem;
 		  line-height: 1.4rem;
 		}
-
-		.info-bar {
-		}
-
 	}
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (min-width: 960px) {
-		.content__demo-style {
+/*		.content__demo-style {
 		  width: 60%;
 		  height: 40rem;
 		}
@@ -37,7 +33,7 @@
 		  margin: 5% auto;
 		  border-radius: .4rem;
 		  border: 2px solid rgba(250, 250, 250, 0.1);
-		}
+		}*/
 
 		.login-bkg {
 		  background-size: center;
@@ -48,14 +44,11 @@
 		  font-size: 1.1rem;
 		  line-height: 1.4rem;
 		}
-
-		.info-bar {
-		}
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		.content__demo-style {
+/*		.content__demo-style {
 		  width: 70%;
 		  height: 36rem;
 		}
@@ -66,7 +59,7 @@
 		  margin: 5% auto;
 		  border-radius: .4rem;
 		  border: 2px solid rgba(250, 250, 250, 0.1);
-		}
+		}*/
 
 		.main-content__style {
 		  width: 40%;
@@ -108,10 +101,10 @@
 		.tutorial__para-width {
 		  width: 75%;
 		}
-
+/*
 		.content__demo-area {
 		  height: 30rem;
-		}
+		}*/
 
 		.login-bkg {
 		  background-size: center;
@@ -174,9 +167,9 @@
 			margin: 0 auto;
 		}
 
-		.content__demo-area {
+/*		.content__demo-area {
 		  height: 20rem;
-		}
+		}*/
 
 		.login-bkg {
 		  background-size: center;
