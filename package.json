@@ -1,15 +1,14 @@
 {
-  "name": "data-structure-visualization",
-  "version": "0.0.1",
-  "description": "Tutorial site for new coders",
-  "main": "server.js",
+  "name": "sea-b20-notes",
+  "version": "0.0.0",
+  "description": "A simple note taking app",
+  "main": "index.js",
   "scripts": {
-    "test": "grunt test",
-    "start": "node server.js"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Data-Structure-Visualization/data-structure-visualization.git"
+    "url": "https://github.com/codefellows/sea-b20-notes.git"
   },
   "keywords": [
     "tutorials",
@@ -18,21 +17,33 @@
     "mongo",
     "angular"
   ],
-  "author": "TheQueues",
+  "author": "Joaquin, Jostein, Larry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Data-Structure-Visualization/data-structure-visualization/issues"
+    "url": "https://github.com/codefellows/sea-b20-notes/issues"
   },
-  "homepage": "https://github.com/Data-Structure-Visualization/data-structure-visualization",
+  "homepage": "https://github.com/codefellows/sea-b20-notes",
   "dependencies": {
+    "bcrypt": "^0.8.0",
+    "bcrypt-nodejs": "latest",
     "body-parser": "^1.8.2",
+    "d3": "^3.4.11",
     "express": "^4.9.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "jwt-simple": "latest",
+    "moment": "^2.8.3",
     "mongoose": "^3.8.16",
+    "passport": "^0.2.1",
+    "passport-http": "^0.2.2",
     "sinon": "^1.10.3"
   },
   "devDependencies": {
     "angular": "^1.2.23",
     "angular-mocks": "^1.2.22",
+    "backbone": "^1.1.2",
     "chai": "^1.9.1",
     "chai-http": "^0.4.0",
     "debowerify": "^0.8.1",
@@ -40,8 +51,10 @@
     "grunt-browserify": "^2.1.4",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express-server": "^0.4.19",
+    "grunt-jscs": "^0.7.1",
     "grunt-karma": "^0.9.0",
     "grunt-mocha": "^0.4.11",
     "grunt-simple-mocha": "^0.4.0",
@@ -50,10 +63,12 @@
     "jsdom": "^1.0.0-pre.1",
     "karma": "^0.12.23",
     "karma-chrome-launcher": "^0.1.4",
+    "karma-firefox-launcher": "^0.1.3",
     "karma-ie-launcher": "^0.1.5",
     "karma-jasmine": "^0.1.5",
     "karma-mocha": "^0.1.8",
     "karma-phantomjs-launcher": "^0.1.4",
+    "karma-safari-launcher": "^0.1.1",
     "mocha": "^1.21.4",
     "sinon": "^1.10.3"
   }
