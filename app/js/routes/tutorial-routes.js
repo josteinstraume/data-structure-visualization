@@ -12,12 +12,6 @@ module.exports = function(app) {
         controller: 'tutorialController'
       })
 
-      //admin
-      .when('/admin', {
-        templateUrl: '/views/public/admin-view.html',
-        controller: 'dataController'
-      })
-
             //second page
       .when('/tutorial-select', {
         templateUrl: '/views/public/tutorial-select-view.html',
