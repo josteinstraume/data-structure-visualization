@@ -1,0 +1,105 @@
+.tutorial-bkg {
+  background: url(../img/DeathtoStock_Wired4.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.tutorial-pattern {
+  background: url(../img/dark_matter.png) top left repeat;
+}
+
+.user-card__link {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+  position: absolute;
+  top: 4.5rem;
+  right: 3rem;
+  opacity: 0.7;
+}
+
+.tutorial__header {
+  text-align: center;
+  padding: 6rem 0 4rem 0;
+  font-size: 2rem;
+}
+
+.tutorial__header-title {
+  font-family: 'Ovo', serif;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #FFF;
+  padding-top: 4rem;
+  padding-bottom: 1.7rem;
+}
+
+.tutorial__header-subtitle {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+  padding-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.content__demo-style {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.content__divider {
+  background: #EE4925;
+  height: 0.3rem;
+}
+
+.instructions__container {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.instructions__title {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  color: #DCDCDC;
+  padding-bottom: .3rem;
+  padding-top: 1rem;
+  font-weight: normal;
+}
+
+.instructions__info {
+  padding-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #DCDCDC;
+  line-height: 1.15rem;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.instructions__info li {
+  margin-left: 1.25rem;
+}
+
+.instructions__float {
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 0.5rem;
+  float: left;
+}
+
+.footer__style {
+  background: #2197B7;
+  border-top: 1px solid #3A484C;
+  border-bottom: 1px solid #03A4D3;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

@@ -10,7 +10,7 @@ var port = process.env.PORT || 3000;
 
 mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/tutorial-dev');
 
-app.use(express.static(__dirname + (process.env.STATIC_DIR || '/build')));
+app.use(express.static(__dirname + (process.env.STATIC_DIR || '/dist')));
 
 app.set('jwtTokenSecret', process.env.JWT_SECRET || 'developmentsecret');
 app.set('secret', process.env.SECRET || 'developmentsecret');

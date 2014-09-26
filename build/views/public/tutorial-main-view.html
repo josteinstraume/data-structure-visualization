@@ -1,0 +1,33 @@
+  <section class="login-bkg">
+    <header class="login__header">
+      <section class="logo-style"><section class="icon-flow-cascade"></section><section class="logo-style__title">tutorius</section></section>
+      <h1 class="login__header-title">Want to learn JavaScript?</h1>
+      <h2 class="login__header-subtitle">Sign up for free and start today.</h2>
+    </header>
+    <main class="main-content__style">
+      <form class="form__group" role="form">
+        <fieldset>
+          <legend class="form__heading">LOGIN</legend>
+
+
+<div data-ng-controller="usersController">
+  <form name="userForm" data-ng-hide="newuser">
+    <input class="form__input" type="text" required data-ng-model="user.email" placeholder="Username">
+    <input class="form__input" type="password" required data-ng-model="user.password" placeholder="Password">
+    <input class="form__input--button" type="submit" name="submit" value="Submit" data-ng-disabled="userform.$invalid" data-ng-click="signin()">
+  </form>
+
+  <a data-ng-click="newuser = !newuser">{{!newuser ? 'or Create a New User' : 'Fill in fields below.'}}</a>
+
+  <form name="newuserform" data-ng-show="newuser">
+    <input class="form__input" type="text" required data-ng-model="user.email" placeholder="Username">
+    <input class="form__input" type="password" required data-ng-model="user.password" placeholder="Password">
+    <input class="form__input" type="password" required data-ng-model="user.passwordConfirmation" placeholder="Confirm Password">
+    <input class="form__input--button" type="submit" name="newuser" value="Create Account" data-ng-disabled="newuserform.$invalid" data-ng-click="createNewUser() && advanceToSkills()">
+  </form>
+</div>
+
+        </fieldset>
+      </form>
+    </main>
+  </section>

@@ -1,0 +1,127 @@
+.logo-style__title {
+  color: #FFF;
+  position: absolute;
+  top: 2rem;
+  left: 6rem;
+  opacity: 0.5;
+}
+
+.login__header {
+  text-align: center;
+  padding: 12rem 0 5rem;
+  font-size: 2rem;
+}
+
+.login__header-title {
+  font-family: 'Ovo', serif;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #FFF;
+  padding-top: 3rem;
+  padding-bottom: 1.7rem;
+}
+
+.login__header-subtitle {
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  color: #FFF;
+}.form__input {
+  display: block;
+  width: 80%;
+  margin: 0.5rem auto;
+  padding: 0.3rem;
+}
+
+.form__heading {
+  padding-bottom: 0.2rem;
+}
+
+.form__group {
+  text-align: center;
+  padding: 1rem;
+}
+
+.login-bkg {
+  background: url(../img/DeathtoStock_Wired4.1.jpg) center no-repeat;
+  background-size: cover;
+  height: 50rem;
+  width: 100%;
+}
+
+.main-content__style {
+  background: rgb(250, 250, 250);
+  background: rgba(250, 250, 250, 0.3);
+  width: 30%;
+  margin: 0 auto;
+  border-radius: .2rem;
+}
+
+input[type=submit] {
+    padding:5rem;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input {
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  color: #3A484C;
+  display: block;
+}
+
+input[type=submit] {
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #03A4D3;
+  padding: 0.5rem;
+  border: 0 none;
+  border-radius: 0.2rem;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.135);
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  box-shadow: inset 0 3px 0 rgba(0,0,0,.135);
+}
+
+.form__input {
+  display: block;
+  width: 80%;
+  margin: 0.5rem auto;
+  padding: 0.3rem;
+}
+
+.form__heading {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+  padding-bottom: 0.2rem;
+}
+
+.form__group {
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo-style {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background: #EE4925;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.icon-flow-cascade {
+  color: #FFF;
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
