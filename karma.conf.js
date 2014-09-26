@@ -2,16 +2,7 @@
 // Generated on Sat Sep 20 2014 10:18:58 GMT-0700 (PDT)
 'use strict';
 
-var browsers = ['Chrome', 'PhantomJS','Firefox'];
-if ( /^win/.test(process.platform) ) {
-  browsers.push('IE');
-}
-if ( /^darwin/.test(process.platform) ) {
-  browsers.push('Safari');
-}
-if (process.env.TRAVIS ) {
-  browsers = ['PhantomJS'];
-}
+var browsers = ['Chrome'];
 
 module.exports = function(config) {
   config.set({
