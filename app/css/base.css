@@ -21,6 +21,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  -webkit-appearance: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -97,3 +98,4 @@ p {
   color: #FFF;
   line-height: 1.2rem;
 }
+
