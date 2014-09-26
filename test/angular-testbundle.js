@@ -34749,7 +34749,7 @@ require("./../bower_components/angular-cookies/angular-cookies.js");
 var tutorialApp = angular.module('tutorialApp', ['ngRoute', 'ngCookies', 'base64']);
 
 //controlers
-require('./controllers/admin-controller')(tutorialApp);
+// require('./controllers/admin-controller')(tutorialApp);
 require('./controllers/tutorial-controller')(tutorialApp);
 require('./controllers/tutorial-select-controller')(tutorialApp);
 require('./controllers/users-controller')(tutorialApp);
@@ -34782,17 +34782,7 @@ tutorialApp.config(['$routeProvider', function($routeProvider){
   });
 }]);
 
-},{"./../bower_components/angular-base64/angular-base64.js":1,"./../bower_components/angular-cookies/angular-cookies.js":2,"./../bower_components/angular-route/angular-route.js":4,"./../bower_components/angular/angular":5,"./controllers/admin-controller":8,"./controllers/data-controller":9,"./controllers/home-controller":10,"./controllers/tutorial-controller":11,"./controllers/tutorial-select-controller":12,"./controllers/users-controller":13,"./directives/controllers/dthree-binary-controller":14,"./directives/d3-binary-directive":15,"./routes/tutorial-routes":16,"./services/tutorial-server":17,"./services/user-input-service":18}],8:[function(require,module,exports){
-'use strict';
-
-module.exports = function(app) {
-  app.controller('adminController', function($scope, tutorialServer) {
-
-
-  });
-};
-
-},{}],9:[function(require,module,exports){
+},{"./../bower_components/angular-base64/angular-base64.js":1,"./../bower_components/angular-cookies/angular-cookies.js":2,"./../bower_components/angular-route/angular-route.js":4,"./../bower_components/angular/angular":5,"./controllers/data-controller":8,"./controllers/home-controller":9,"./controllers/tutorial-controller":10,"./controllers/tutorial-select-controller":11,"./controllers/users-controller":12,"./directives/controllers/dthree-binary-controller":13,"./directives/d3-binary-directive":14,"./routes/tutorial-routes":15,"./services/tutorial-server":16,"./services/user-input-service":17}],8:[function(require,module,exports){
 module.exports = function(app) {
 	app.controller('dataController',
 		[ '$scope',
@@ -34801,13 +34791,13 @@ module.exports = function(app) {
 		} ]);
 };
 
-},{"./../../bower_components/d3/d3.js":6}],10:[function(require,module,exports){
+},{"./../../bower_components/d3/d3.js":6}],9:[function(require,module,exports){
 module.exports = function(app){
   app.controller('homeController', function($scope, $cookies, $location){
   });
 };
 
-},{}],11:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 //tutorial-controller.js
 
 
@@ -34828,7 +34818,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],12:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 //tutorial-controller.js
 
 'use strict';
@@ -34849,7 +34839,7 @@ module.exports = function(app) {
   });
 };
 
-},{"./../../bower_components/d3/d3.js":6}],13:[function(require,module,exports){
+},{"./../../bower_components/d3/d3.js":6}],12:[function(require,module,exports){
 'use strict';
 
 module.exports = function(app) {
@@ -34867,7 +34857,7 @@ module.exports = function(app) {
       })
       .success(function(data){
         $cookies.jwt = data.jwt;
-        $location.path('/home');
+        $location.path('/tutorial-select');
         console.log('success');
       })
       .error(function(data){
@@ -34899,7 +34889,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],14:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 'use strict';
 
 
@@ -35300,7 +35290,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],15:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 'use strict';
 
 module.exports = function(app) {
@@ -35313,7 +35303,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],16:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 //tutorial-routes.js
 'use strict';
 
@@ -35347,7 +35337,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],17:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 'use strict';
 
 module.exports = function(app) {
@@ -35408,7 +35398,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],18:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 'use strict';
 
 module.exports = function(app) {
@@ -35428,32 +35418,7 @@ module.exports = function(app) {
   });
 };
 
-},{}],19:[function(require,module,exports){
-// 'use strict'
-
-// require('../../app/js/app.js');
-// require('angular-mocks');
-
-// describe('TutorialController', function() {
-//   var $controllerConstructor;
-//   var $httpBackend;
-//   var scope;
-
-//   beforeEach(angular.mock.module('tutorialApp'));
-
-//   beforeEach(angular.mock.inject(function($controller, $rootScope) {
-//     scope = $rootScope.$new();
-//     $controllerConstructor = $controller;
-//   }));
-
-//   it('should set the $location.path to "/tutorial-select after advanceToTutorials', function () {
-//     expect($location.path).toBeUndefined();
-//     scope.advanceToTutorials();
-//     expect($location.path).toEqual('/tutorial-select');
-//   })
-// });
-
-},{}],20:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 'use strict'
 
 require('../../app/js/app.js');
@@ -35496,18 +35461,4 @@ describe('Unit Testing', function() {
   });
 });
 
-},{"../../app/js/app.js":7,"./../../app/bower_components/angular-mocks/angular-mocks.js":3}],21:[function(require,module,exports){
-// 'use strict'
-
-// require('../../app/js/app.js');
-// require('angular-mocks');
-
-// describe('userInputService service', function() {
-//   beforeEach(angular.mock.module('tutorialApp'));
-
-//   var ns;
-//   var $httpBackend;
-
-// })
-
-},{}]},{},[19,20,21]);
+},{"../../app/js/app.js":7,"./../../app/bower_components/angular-mocks/angular-mocks.js":3}]},{},[18]);
