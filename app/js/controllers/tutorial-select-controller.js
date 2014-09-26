@@ -5,15 +5,15 @@
 module.exports = function(app) {
   app.controller('tutorialSelectController', function($scope, $location, userInputService) {
     $scope.d3 = require('d3');
-    $scope.user.email = userInputService.get();
+    $scope.username = userInputService.get();
 
     $scope.advanceToTutorials = function() {
       $location.path('/tutorial-select');
-      userInputService.set("user.email",$scope.user.email);
+      userInputService.set("username",$scope.username);
     };
 
 
-    $scope.user.email = userInputService.get("user.email");
+    $scope.username = userInputService.get("username");
 
   });
 };
