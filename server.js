@@ -8,7 +8,7 @@ var passport = require('passport');
 var app = express();
 var port = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/tutorial-dev');
+mongoose.connect(process.env.MONGO_URI || process.env.MONGO_URL || 'mongodb://localhost/tutorial-dev');
 
 app.use(express.static(__dirname + (process.env.STATIC_DIR || '/dist')));
 
