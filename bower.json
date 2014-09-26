@@ -19,7 +19,10 @@
   ],
   "dependencies": {
     "angular": "~1.2.25",
-    "angular-route": "~1.2.25"
+    "angular-route": "~1.2.25",
+    "d3": "~3.4.11",
+    "angular-base64": "~2.0.2",
+    "angular-cookies": "~1.2.25"
   },
   "devDependencies": {
     "sinon": "~1.10.3",

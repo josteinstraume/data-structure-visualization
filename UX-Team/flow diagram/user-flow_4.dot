@@ -1,0 +1,15 @@
+graph graphname {
+  a [label="{<f0> WELCOME|<f1> login|<f2> email or username|<f3> password}" shape=record]
+  g [label="TUTORIAL PAGE"]
+  i [label="{<f0> TUTORIAL|<f1> name|<f2> difficulty|<f3> reset button}" shape=record]
+  m [label="tutorial completed" shape=record]
+  o [label="log out to welcome view"]
+  p [label="{<f0> PROFILE|<f1> name|<f2> basic stats|<f3> HOW TO USE|<f4> tutorial progress}" shape=record]
+  q [label="advance through tutorial"]
+
+  a -- g;
+  g -- p;
+  g -- i;
+  i -- q -- m;
+  g -- o;
+}
