@@ -1,3 +1,26 @@
+.login-bkg {
+  background: url(../img/DeathtoStock_Wired4.1.jpg) center no-repeat;
+  background-size: cover;
+  height: 50rem;
+  width: 100%;
+}
+
+.logo-style {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background: #EE4925;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.icon-flow-cascade {
+  color: #FFF;
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
 .logo-style__title {
   color: #FFF;
   position: absolute;
@@ -25,15 +48,6 @@
   font-family: 'Muli', sans-serif;
   font-size: 2rem;
   color: #FFF;
-}.form__input {
-  display: block;
-  width: 80%;
-  margin: 0.5rem auto;
-  padding: 0.3rem;
-}
-
-.form__heading {
-  padding-bottom: 0.2rem;
 }
 
 .form__group {
@@ -41,11 +55,15 @@
   padding: 1rem;
 }
 
-.login-bkg {
-  background: url(../img/DeathtoStock_Wired4.1.jpg) center no-repeat;
-  background-size: cover;
-  height: 50rem;
-  width: 100%;
+.form__heading {
+  padding-bottom: 0.2rem;
+}
+
+.form__input {
+  display: block;
+  width: 80%;
+  margin: 0.5rem auto;
+  padding: 0.3rem;
 }
 
 .main-content__style {
@@ -54,15 +72,6 @@
   width: 30%;
   margin: 0 auto;
   border-radius: .2rem;
-}
-
-input[type=submit] {
-    padding:5rem;
-    background:#ccc;
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
 }
 
 input {
@@ -75,7 +84,7 @@ input {
 input[type=submit] {
   font-family: 'Muli', sans-serif;
   font-size: 1rem;
-  color: white;
+  color: #FFF;
   background-color: #03A4D3;
   padding: 0.5rem;
   border: 0 none;
@@ -108,20 +117,3 @@ input[type=submit]:hover {
   text-align: center;
   padding: 1rem;
 }
-
-.logo-style {
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  background: #EE4925;
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-}
-
-.icon-flow-cascade {
-  color: #FFF;
-  font-size: 3rem;
-  padding-top: 1rem;
-}
-

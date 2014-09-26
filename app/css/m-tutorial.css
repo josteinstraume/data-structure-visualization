@@ -41,14 +41,20 @@
   opacity: 0.7;
 }
 
+.content__divider {
+  background: #EE4925;
+  height: 0.3rem;
+}
+
 .content__demo-style {
   width: 100%;
   margin: 2rem auto;
 }
 
-.content__divider {
-  background: #EE4925;
-  height: 0.3rem;
+.footer__style {
+  background: #2197B7;
+  border-top: 1px solid #3A484C;
+  border-bottom: 1px solid #03A4D3;
 }
 
 .instructions__container {
@@ -87,12 +93,6 @@
   width: 50%;
   padding-bottom: 0.5rem;
   float: left;
-}
-
-.footer__style {
-  background: #2197B7;
-  border-top: 1px solid #3A484C;
-  border-bottom: 1px solid #03A4D3;
 }
 
 .clear {
