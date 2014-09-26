@@ -1,4 +1,31 @@
-.form__input {
+.logo-style__title {
+  color: #FFF;
+  position: absolute;
+  top: 2rem;
+  left: 6rem;
+  opacity: 0.5;
+}
+
+.login__header {
+  text-align: center;
+  padding: 12rem 0 5rem;
+  font-size: 2rem;
+}
+
+.login__header-title {
+  font-family: 'Ovo', serif;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #FFF;
+  padding-top: 3rem;
+  padding-bottom: 1.7rem;
+}
+
+.login__header-subtitle {
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  color: #FFF;
+}.form__input {
   display: block;
   width: 80%;
   margin: 0.5rem auto;
@@ -14,14 +41,6 @@
   padding: 1rem;
 }
 
-input[type=submit] {
-    padding:5rem;
-    background:#ccc;
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; }
-
 .login-bkg {
   background: url(../img/DeathtoStock_Wired4.1.jpg) center no-repeat;
   background-size: cover;
@@ -35,6 +54,15 @@ input[type=submit] {
   width: 30%;
   margin: 0 auto;
   border-radius: .2rem;
+}
+
+input[type=submit] {
+    padding:5rem;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 input {
@@ -59,7 +87,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   cursor: pointer;
-  box-shadow: inset 0 1px 0 rgba(0,0,0,.135);
+  box-shadow: inset 0 3px 0 rgba(0,0,0,.135);
 }
 
 .form__input {
@@ -97,31 +125,3 @@ input[type=submit]:hover {
   padding-top: 1rem;
 }
 
-.logo-style__title {
-  color: #FFF;
-  position: absolute;
-  top: 2rem;
-  left: 6rem;
-  opacity: 0.5;
-}
-
-.login__header {
-  text-align: center;
-  padding: 12rem 0 5rem;
-  font-size: 2rem;
-}
-
-.login__header-title {
-  font-family: 'Ovo', serif;
-  font-size: 4rem;
-  font-weight: bolder;
-  color: #FFF;
-  padding-top: 3rem;
-  padding-bottom: 1.7rem;
-}
-
-.login__header-subtitle {
-  font-family: 'Muli', sans-serif;
-  font-size: 2rem;
-  color: #FFF;
-}

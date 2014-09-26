@@ -41,7 +41,6 @@
 		#binary {
   		padding-left: 0;
   		margin-left: -5rem;
-  		width: 50%;
 		}
 	}
 	/* All Mobile Sizes (devices and browser) */
@@ -50,6 +49,10 @@
 		#binary {
   		padding-left: 0;
   		margin-left: -5rem;
+		}
+
+		.instructions__float {
+			width: 100%;
 		}
 	}
 
@@ -65,7 +68,7 @@
 		  padding-bottom: 1rem;
 		}
 
-		.login__header-title {
+		.login__header-title, .tutorial__header-title {
 		  padding-top: 7rem;
 		}
 
@@ -91,9 +94,17 @@
 		}
 
 		.main-content__style {
-		  width: 50%;
+		  width: 60%;
 		}
 
+		.instructions__float {
+			width: 100%;
+		}
+
+		#binary {
+  		padding-left: 0;
+  		margin-left: -15rem;
+		}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -111,20 +122,21 @@
 
 		.tutorial__header-title {
 			line-height: 2.5rem;
-			padding-top: 3rem;
+			padding-top: 7rem;
 		}
 
 		.login__header-title {
 		  line-height: 2.5rem;
+		  padding-top: 7rem;
 		}
 
 		.tutorial__header-subtitle, .login__header-subtitle {
-		  font-size: 1.5rem;
+		  font-size: 1.4rem;
 		  padding-bottom: 0.5rem;
 		}
 
 		.login__header-subtitle {
-		  font-size: 1.2rem;
+		  font-size: 1rem;
 		  font-weight: normal;
 		}
 
@@ -154,6 +166,10 @@
 
 		.main-content__style {
 		  width: 80%;
+		}
+
+		.instructions__float {
+			width: 100%;
 		}
 
 	}
