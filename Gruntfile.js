@@ -124,4 +124,6 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['browserify:angulartest','karma:unit']);
   grunt.registerTask('serve', ['express:dev','watch:express']);
   grunt.registerTask('default',['test','dist','serve']);
+  grunt.registerTask('shrink', ['browserify:dev', 'uglify', 'htmlmin:dist', 'cssmin:dist']);
+  grunt.registerTask('production', ['clean:dist', 'shrink', 'copy:distfonts']);
 };
